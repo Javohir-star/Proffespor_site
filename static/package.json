@@ -1,0 +1,11 @@
+{
+  "name": "professor-portfolio-frontend",
+  "version": "1.0.0",
+  "description": "Universitet professorlari uchun oddiy statik portfolio saytining frontend shabloni.",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
+

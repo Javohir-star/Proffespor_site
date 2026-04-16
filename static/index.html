@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professor Portfoliosi</title>
+  <a href="{% url 'home' %}">Bosh sahifa</a>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-mark">P</span>
+        <span class="logo-text">Professor Portfoliosi</span>
+      </div>
+      <nav class="nav">
+        <a href="#about">Hayot va ijod</a>
+        <a href="#books">Kitoblar</a>
+        <a href="#articles">Maqolalar</a>
+        <a href="#videos">Videolar</a>
+        <a href="#presentations">Taqdimotlar</a>
+        <a href="#projects">Loyihalar</a>
+        <a href="#events">Tadbirlari</a>
+        <a href="#news">Yangiliklar</a>
+        <button id="themeToggle" class="theme-toggle" aria-label="Tungi/kun rejimi">
+          🌙
+        </button>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Menyuni ochish/yopish">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-badge">Universitet professori portfoliosi</p>
+          <h1>Prof. Ism Familiya</h1>
+          <p class="hero-subtitle">
+            Fan sohasi: Sun’iy intellekt, Ma’lumotlar tahlili, Dasturlash ta’limi.
+          </p>
+          <div class="hero-meta">
+            <span>Ilmiy darajasi: DSc, professor</span>
+            <span>Kafedra: Informatika va axborot texnologiyalari</span>
+            <span>Universitet: Namuna universiteti</span>
+          </div>
+          <div class="hero-actions">
+            <a href="#contact" class="btn primary">Bog‘lanish</a>
+            <a href="#cv" class="btn ghost">CV (rezume)</a>
+          </div>
+        </div>
+        <div class="hero-photo-card">
+          <div class="photo-placeholder">
+            <span>Foto</span>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <span class="stat-number">20+</span>
+              <span class="stat-label">yillik tajriba</span>
+            </div>
+            <div>
+              <span class="stat-number">10+</span>
+              <span class="stat-label">kitoblar</span>
+            </div>
+            <div>
+              <span class="stat-number">80+</span>
+              <span class="stat-label">maqolalar</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hayot va ijod -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Hayot va ijod</h2>
+          <p>Professorning qisqacha biografiyasi va ilmiy faoliyati.</p>
+        </div>
+        <div class="grid two">
+          <article class="card">
+            <h3>Biografiya</h3>
+            <p>
+              Bu yerda professorning tug‘ilgan yili, tug‘ilgan joyi, ta’lim olgan
+              universitetlari, o‘zining ilmiy yo‘li haqida batafsil ma’lumotlar
+              beriladi. Matnni o‘zingizning haqiqiy ma’lumotlaringiz bilan
+              almashtiring.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Ilmiy faoliyat</h3>
+            <p>
+              Asosiy ilmiy yo‘nalishlari, olib borayotgan tadqiqotlari, dissertatsiya
+              mavzulari, xalqaro grantlar va ilmiy loyihalar haqida qisqacha
+              izohlar joylashtiring.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kitoblar -->
+    <section id="books" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>Kitoblar</h2>
+          <p>Professor tomonidan chop etilgan monografiya va o‘quv qo‘llanmalar.</p>
+        </div>
+        <div class="grid three">
+          <article class="card card-media">
+            <div class="card-media-body">
+              <h3>Sun’iy intellekt asoslari</h3>
+              <p class="meta">Monografiya • 2022</p>
+              <p>
+                Sun’iy intellektning nazariy asoslari, algoritmlar va amaliy
+                qo‘llanmalari yoritilgan.
+              </p>
+            </div>
+            <a href="#" class="card-link">Ko‘rish / yuklab olish</a>
+          </article>
+          <article class="card card-media">
+            <div class="card-media-body">
+              <h3>Python dasturlash</h3>
+              <p class="meta">O‘quv qo‘llanma • 2021</p>
+              <p>
+                Talabalar uchun dastlabki bosqichdan boshlab Python dasturlash
+                tillari misollar bilan tushuntirilgan.
+              </p>
+            </div>
+            <a href="#" class="card-link">Ko‘rish / yuklab olish</a>
+          </article>
+          <article class="card card-media">
+            <div class="card-media-body">
+              <h3>Ma’lumotlar tahlili</h3>
+              <p class="meta">Darslik • 2020</p>
+              <p>
+                Statistik tahlil, vizualizatsiya va mashinaviy o‘qitish asoslari
+                haqidagi darslik.
+              </p>
+            </div>
+            <a href="#" class="card-link">Ko‘rish / yuklab olish</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Maqolalar -->
+    <section id="articles" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Maqolalar</h2>
+          <p>Ilmiy jurnallarda va konferensiyalarda chop etilgan maqolalar ro‘yxati.</p>
+        </div>
+        <div class="list">
+          <article class="list-item">
+            <div>
+              <h3>Machine Learning yondashuvlari ta’lim tizimida</h3>
+              <p class="meta">“International Journal of Education”, 2023</p>
+            </div>
+            <a href="#" class="link-small">Maqolani ko‘rish</a>
+          </article>
+          <article class="list-item">
+            <div>
+              <h3>Big Data asosida talabalarning o‘qish natijalarini bashorat qilish</h3>
+              <p class="meta">“Computing Conference”, 2022</p>
+            </div>
+            <a href="#" class="link-small">Maqolani ko‘rish</a>
+          </article>
+          <article class="list-item">
+            <div>
+              <h3>Sun’iy intellekt va ta’lim integratsiyasi</h3>
+              <p class="meta">“Uzbek Journal of ICT”, 2021</p>
+            </div>
+            <a href="#" class="link-small">Maqolani ko‘rish</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Videolar -->
+    <section id="videos" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>Videolar</h2>
+          <p>Ma’ruzalar, intervyular va onlayn kurslar videolari.</p>
+        </div>
+        <div class="grid three">
+          <article class="card video-card">
+            <div class="video-thumb">
+              <span>Video preview</span>
+            </div>
+            <h3>Sun’iy intellektga kirish</h3>
+            <p class="meta">YouTube • 45 daqiqa</p>
+            <a href="#" class="card-link">Videoni tomosha qilish</a>
+          </article>
+          <article class="card video-card">
+            <div class="video-thumb">
+              <span>Video preview</span>
+            </div>
+            <h3>Ma’lumotlar tahlili amaliy dars</h3>
+            <p class="meta">YouTube • 60 daqiqa</p>
+            <a href="#" class="card-link">Videoni tomosha qilish</a>
+          </article>
+          <article class="card video-card">
+            <div class="video-thumb">
+              <span>Video preview</span>
+            </div>
+            <h3>Dasturlashni o‘qitish metodikasi</h3>
+            <p class="meta">Onlayn kurs</p>
+            <a href="#" class="card-link">Videoni tomosha qilish</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Taqdimotlar -->
+    <section id="presentations" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Taqdimotlar</h2>
+          <p>Konferensiya va seminarlar uchun tayyorlangan slayd va taqdimotlar.</p>
+        </div>
+        <div class="grid two">
+          <article class="card">
+            <h3>AI in Education</h3>
+            <p class="meta">Konferensiya taqdimoti • PDF</p>
+            <a href="#" class="card-link">Yuklab olish</a>
+          </article>
+          <article class="card">
+            <h3>Data Science for Beginners</h3>
+            <p class="meta">Seminar taqdimoti • PPTX</p>
+            <a href="#" class="card-link">Yuklab olish</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Loyihalar -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>Loyihalar</h2>
+          <p>Ilmiy va amaliy loyihalar, grantlar va hamkorlik dasturlari.</p>
+        </div>
+        <div class="grid three">
+          <article class="card project-card">
+            <h3>Smart Campus tizimi</h3>
+            <p class="meta">Grant loyihasi • 2022–2024</p>
+            <p>
+              Universitet infratuzilmasini raqamlashtirish va talabalar uchun
+              aqlli xizmatlar yaratish.
+            </p>
+          </article>
+          <article class="card project-card">
+            <h3>AI asosida test tizimi</h3>
+            <p class="meta">Ilmiy loyiha • 2021–2023</p>
+            <p>
+              Talabalarning bilimini tahlil qiluvchi va adaptiv test topshiriqlarini
+              yaratadigan tizim.
+            </p>
+          </article>
+          <article class="card project-card">
+            <h3>Onlayn ta’lim platformasi</h3>
+            <p class="meta">Startap loyiha</p>
+            <p>
+              Masofaviy o‘qitish uchun videokurslar va interaktiv mashqlar platformasi.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tadbirlari -->
+    <section id="events" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Tadbirlari</h2>
+          <p>Sessiyalar, seminarlar, konferensiyalar va uchrashuvlar.</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2025-03-12</div>
+            <div class="timeline-content">
+              <h3>Sun’iy intellekt bo‘yicha xalqaro konferensiya</h3>
+              <p class="meta">Toshkent, O‘zbekiston</p>
+              <p>Plenar ma’ruza va panel muhokamasida ishtirok etdi.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2024-11-20</div>
+            <div class="timeline-content">
+              <h3>Ma’lumotlar tahlili bo‘yicha seminar</h3>
+              <p class="meta">Namuna universiteti</p>
+              <p>Talabalar uchun amaliy mashg‘ulotlar o‘tkazildi.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2024-05-05</div>
+            <div class="timeline-content">
+              <h3>Dasturlash bo‘yicha ustoz-shogird uchrashuvi</h3>
+              <p class="meta">Onlayn</p>
+              <p>Bitiruvchilar va talabalar uchun mentorlik sessiyasi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Yangiliklar -->
+    <section id="news" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>Yangiliklar</h2>
+          <p>So‘nggi e’lonlar, mukofotlar va muhim xabarlar.</p>
+        </div>
+        <div class="grid two">
+          <article class="card">
+            <p class="meta">2026-02-10</p>
+            <h3>Yilning eng yaxshi professor mukofoti</h3>
+            <p>
+              Professor “Yilning eng yaxshi IT-professori” nominatsiyasi bo‘yicha
+              g‘olib deb topildi.
+            </p>
+          </article>
+          <article class="card">
+            <p class="meta">2025-12-01</p>
+            <h3>Yangi monografiya chop etildi</h3>
+            <p>
+              “Sun’iy intellekt va ta’lim” nomli yangi monografiya xalqaro nashriyotda
+              chop etildi.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CV va kontakt -->
+    <section id="cv" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>CV (rezume)</h2>
+          <p>To‘liq rezyume fayl ko‘rinishida yuklab olish.</p>
+        </div>
+        <div class="card">
+          <p>
+            Rezyume faylingizni PDF ko‘rinishida saqlab, quyidagi havolaga joylashtiring.
+          </p>
+          <a href="#" class="btn primary">CV ni yuklab olish (PDF)</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>Bog‘lanish</h2>
+          <p>Talabalar, hamkorlar va tashkilotlar uchun aloqa ma’lumotlari.</p>
+        </div>
+        <div class="grid two">
+          <div class="card">
+            <h3>Kontakt ma’lumotlar</h3>
+            <ul class="contact-list">
+              <li><strong>Email:</strong> <a href="mailto:professor@example.com">professor@example.com</a></li>
+              <li><strong>Telefon:</strong> +998 (90) 000-00-00</li>
+              <li><strong>Ofis:</strong> Namuna universiteti, 3-bino, 405-xona</li>
+              <li><strong>Qabul kunlari:</strong> Dushanba, Chorshanba 14:00–17:00</li>
+            </ul>
+          </div>
+          <form class="card contact-form">
+            <h3>Xabar yuborish</h3>
+            <label>
+              Ism familiya
+              <input type="text" placeholder="Talaba ismi" required />
+            </label>
+            <label>
+              Email
+              <input type="email" placeholder="email@example.com" required />
+            </label>
+            <label>
+              Xabar
+              <textarea rows="4" placeholder="Savol yoki taklifingizni yozing..." required></textarea>
+            </label>
+            <button type="submit" class="btn primary">Yuborish</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Prof. Ism Familiya. Barcha huquqlar himoyalangan.</p>
+      <p class="footer-meta">
+        Portfolio shabloni – moslashtirish uchun tayyor.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
